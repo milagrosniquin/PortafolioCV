@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Milagros Polo – Portfolio</title>
+  <link rel="stylesheet" href="portafolio.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader">
+    <canvas id="disney-canvas"></canvas> 
+    <div id="preloader-text">
+      <span class="loading-name">Milagros Niquin</span>
+      <span class="loading-sub">Portfolio 2026</span>
+    </div>
+  </div>
+
+  <!-- ===================== MAIN SITE ===================== -->
+  <div id="main-site" class="hidden">
+
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-brand">Milagros</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Casa</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">Acerca</a></li>
+        <li><a href="#services" class="nav-link" data-section="services">Servicios</a></li>
+        <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portafolio</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contactame</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <!-- ===================== SECTION: HOME ===================== -->
+    <section id="home" class="section">
+      <!-- GLASS HERO (left panel) -->
+      <div class="glass-hero">
+        <div class="glass-tags">
+          <span class="tag">⬤ Sistema Listo</span>
+          <span class="tag active-tag">Portfolio 2026</span>
+          <span class="tag">◌ UI Cargando</span>
+        </div>
+
+        <div class="hero-columns">
+          <!-- LEFT -->
+          <div class="hero-left">
+            <p class="hello-label">HOLA</p>
+            <h1 class="hero-title">Soy <span class="glow-name">Milagros Polo</span></h1>
+            <p class="hero-subtitle">Full-stack Web Developer <span class="cursor-blink">|</span></p>
+            <p class="hero-desc">
+              Diseño y desarrollo experiencias digitales que combinan estética y rendimiento. Especializada en React, Node.js y diseño de interfaces modernas que conectan con las personas.
+            </p>
+
+            <div class="status-bar-wrap">
+              <span class="status-label">Estado</span>
+              <div class="status-bar"><div class="status-fill"></div></div>
+              <span class="status-pct">42%</span>
+            </div>
+
+            <div class="hero-btns">
+              <button class="btn-glow">
+                <i class="fas fa-code"></i> Codigo
+              </button>
+              <button class="btn-outline">
+                <i class="fas fa-user"></i> Perfil
+              </button>
+              <button class="btn-outline">
+                <i class="fas fa-external-link-alt"></i> Fuente
+              </button>
+            </div>
+
+            <div class="url-bar">
+              <span class="url-dot green"></span>
+              <span class="url-dot yellow"></span>
+              <span class="url-dot red"></span>
+              <span class="url-text">https://milagrospolo.dev</span>
+            </div>
+
+            <div class="social-icons">
+              <a href="#" class="soc-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="soc-icon"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" class="soc-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <a href="#" class="btn-glow mt-lg">Vamos a conversar</a>
+          </div>
+
+          <!-- RIGHT – Core UI widget -->
+          <div class="hero-right">
+            <div class="core-ui">
+              <p class="core-label">// Interfaz Base</p>
+              <div class="core-circle-wrap">
+                <div class="core-circle-ring ring-1"></div>
+                <div class="core-circle-ring ring-2"></div>
+                <div class="core-circle-ring ring-3"></div>
+                <div class="core-center">
+                  <span class="core-welcome">BIENVENIDO</span>
+                  <span class="core-sub">v2.0.25</span>
+                </div>
+              </div>
+              <div class="core-stats">
+                <div class="core-stat">
+                  <span class="stat-num">06</span>
+                  <span class="stat-lbl">Modulos</span>
+                </div>
+                <div class="core-stat">
+                  <span class="stat-num">12<small>ms</small></span>
+                  <span class="stat-lbl">Latencia</span>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+                                                                       
+    <!-- ===================== SECTION: ABOUT ===================== -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <span class="deco">✦</span>
+        <h2 class="section-title">Mi Perfil</h2>
+        <span class="deco">✦</span>
+      </div>
+
+      <div class="about-columns">
+        <div class="about-left">
+          <p class="about-hello">Hola Soy <span class="glow-name">Milagros</span></p>
+          <p class="about-desc">
+            Estudiante de Ingeniería de Sistemas Computacionales con interés en el desarrollo de software y la innovación tecnológica. Me motiva participar en proyectos de análisis, diseño e implementación de soluciones digitales. Destaco por mi capacidad de aprendizaje, trabajo en equipo y actitud proactiva, buscando fortalecer continuamente mis competencias técnicas y profesionales.
+          </p>
+          <blockquote class="about-quote">
+            "Siempre entrega más de lo que se espera." — Larry Page
+          </blockquote>
+          <div class="about-btns">
+            <a href="#" class="btn-glow"><i class="fas fa-download"></i> Descargar CV</a>
+            <a href="#portfolio" class="btn-outline"><i class="fas fa-eye"></i> Visulizar Proyectos</a>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="about-img-wrap">
+            <div class="about-glow"></div>
+            <div class="about-img">
+
+            <img src="img/foto_cv.jpeg" alt="Foto de Milagros Polo" />
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card glass-card">
+          <i class="fas fa-folder-open stat-icon"></i>
+          <div class="stat-info">
+            <h3>Total Proyectos</h3>
+            <span class="stat-big">12</span>
+            <p>Proyectos entregados con éxito</p>
+          </div>
+          <!--<span class="live-badge"><span class="live-dot"></span>Live</span> -->
+        </div>
+        <!--<div class="stat-card glass-card">
+          <i class="fas fa-users stat-icon"></i>
+          <div class="stat-info">
+            <h3>Clientes Contentos</h3>
+            <span class="stat-big">28</span>
+            <p>Clientes satisfechos</p>
+          </div>
+          <span class="live-badge"><span class="live-dot"></span>Live</span>
+        </div>
+        <div class="stat-card glass-card">
+          <i class="fas fa-trophy stat-icon"></i> -->
+          <!--<div class="stat-info">
+            <h3>Premios Ganados</h3>
+            <span class="stat-big">05</span>
+            <p>Reconocimientos</p>
+          </div> -->
+          <span class="live-badge"><span class="live-dot"></span>Live</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION: SERVICES ===================== -->
+    <section id="services" class="section">
+      <div class="section-header">
+        <span class="deco">✦</span>
+        <h2 class="section-title">Servicios</h2>
+        <span class="deco">✦</span>
+      </div>
+      <div class="services-grid">
+        <div class="service-card glass-card">
+          <i class="fas fa-laptop-code service-icon"></i>
+          <h3>Web Development</h3>
+          <p>Aplicaciones web modernas con React, Next.js y Node.js optimizadas para velocidad y escalabilidad.</p>
+        </div>
+        <div class="service-card glass-card">
+          <i class="fas fa-paint-brush service-icon"></i>
+          <h3>UI / UX Design</h3>
+          <p>Interfaces intuitivas y atractivas centradas en la experiencia del usuario con Figma y CSS avanzado.</p>
+        </div>
+        <div class="service-card glass-card">
+          <i class="fas fa-server service-icon"></i>
+          <h3>Backend & APIs</h3>
+          <p>APIs RESTful y GraphQL robustas con Node.js, Express, PostgreSQL y MongoDB.</p>
+        </div>
+        <!--<div class="service-card glass-card">
+          <i class="fas fa-mobile-alt service-icon"></i>
+          <h3>Mobile Apps</h3>
+          <p>Aplicaciones móviles cross-platform con React Native para iOS y Android.</p>
+        </div> -->
+        <div class="service-card glass-card">
+          <i class="fas fa-cloud service-icon"></i>
+          <h3>Cloud & DevOps</h3>
+          <p>Despliegue en AWS, Vercel y Docker con pipelines CI/CD automatizados.</p>
+        </div>
+        <!--<div class="service-card glass-card">
+          <i class="fas fa-shield-alt service-icon"></i>
+          <h3>Security Audit</h3>
+          <p>Auditorías de seguridad web, penetration testing básico y mejores prácticas de autenticación.</p>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- ===================== SECTION: PORTFOLIO ===================== -->
+    <section id="portfolio" class="section">
+      <div class="section-header">
+        <span class="deco">✦</span>
+        <h2 class="section-title">Portafolio 2026</h2>
+        <span class="deco">✦</span>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card glass-card">
+          <div class="port-thumb port-thumb-1">
+            <i class="fas fa-globe"></i>
+          </div>
+          <div class="port-info">
+            <h3>E-Commerce Platform</h3>
+            <p>React · Node.js · MongoDB</p>
+            <div class="port-links">
+              <!--<a href="#" class="btn-glow-sm">Live</a> -->
+              <a href="#" class="btn-outline-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card glass-card">
+          <div class="port-thumb port-thumb-2">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="port-info">
+            <h3>Analytics Dashboard</h3>
+            <p>Next.js · PostgreSQL · D3.js</p>
+            <div class="port-links">
+              <!--<a href="#" class="btn-glow-sm">Live</a> -->
+              <a href="#" class="btn-outline-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!--<div class="portfolio-card glass-card">
+          <div class="port-thumb port-thumb-3">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="port-info">
+            <h3>Fitness Tracker App</h3>
+            <p>React Native · Firebase</p>
+            <div class="port-links">
+              <a href="#" class="btn-glow-sm">Live</a>
+              <a href="#" class="btn-outline-sm">GitHub</a>
+            </div>
+          </div>
+        </div> -->
+        <div class="portfolio-card glass-card">
+          <div class="port-thumb port-thumb-4">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="port-info">
+            <h3>AI Content Generator</h3>
+            <p>Python · OpenAI API · FastAPI</p>
+            <div class="port-links">
+              <!--<a href="#" class="btn-glow-sm">Live</a> -->
+              <a href="#" class="btn-outline-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!--<div class="portfolio-card glass-card">
+          <div class="port-thumb port-thumb-5">
+            <i class="fas fa-comments"></i>
+          </div>
+          <div class="port-info">
+            <h3>Real-time Chat App</h3>
+            <p>Socket.io · React · Redis</p>
+            <div class="port-links">
+              <a href="#" class="btn-glow-sm">Live</a>
+              <a href="#" class="btn-outline-sm">GitHub</a>
+            </div>
+          </div>
+        </div> -->
+        <!--<div class="portfolio-card glass-card">
+          <div class="port-thumb port-thumb-6">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="port-info">
+            <h3>Auth Security Suite</h3>
+            <p>Node.js · JWT · OAuth2</p>
+            <div class="port-links">
+              <a href="#" class="btn-glow-sm">Live</a>
+              <a href="#" class="btn-outline-sm">GitHub</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- ===================== SECTION: CONTACT ===================== -->
+    <section id="contact" class="section">
+      <div class="section-header">
+        <span class="deco">✦</span>
+        <h2 class="section-title">Contàctame</h2>
+        <span class="deco">✦</span>
+      </div>
+
+      <div class="contact-columns">
+        <!-- LEFT: info -->
+        <div class="contact-left">
+          <p class="contact-intro">¿Tienes un proyecto en mente? Me encantaría escucharte y trabajar juntos para hacerlo realidad.</p>
+          <ul class="contact-details">
+            <li>
+              <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+              <div>
+                <strong>Email</strong>
+                <p>milagrosyeraldin.polo@gmail.com</p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+              <div>
+                <strong>Ubicación</strong>
+                <p>Trujillo, Perú</p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon"><i class="fas fa-phone"></i></span>
+              <div>
+                <strong>Teléfono</strong>
+                <p>+51 948 679 599</p>
+              </div>
+            </li>
+          </ul>
+          <div class="contact-social">
+            <a href="#" class="soc-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="soc-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="soc-icon"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="soc-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- RIGHT: form -->
+        <div class="contact-right glass-card">
+          <div class="contact-form">
+            <div class="form-group">
+              <label>NOMBRE</label>
+              <input type="text" placeholder="Tu nombre completo" />
+            </div>
+            <div class="form-group">
+              <label>Correo</label>
+              <input type="gmail" placeholder="tu@gmail.com" />
+            </div>
+            <div class="form-group">
+              <label>Asunto</label>
+              <input type="text" placeholder="Asunto del mensaje" />
+            </div>
+            <div class="form-group">
+              <label>Mensaje</label>
+              <textarea rows="5" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+            </div>
+            <button class="btn-glow full-width" id="sendBtn">
+              <i class="fas fa-paper-plane"></i> Enviar Mensaje
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p>© 2026 <span class="glow-name">Milagros Polo</p>
+    </footer>
+
+  </div><!-- /main-site -->
+
+  <script src="script.js"></script>
+</body>
+</html>
